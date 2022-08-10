@@ -198,7 +198,7 @@ h3 {
     width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     .nosotros__texto {
         grid-column: 1/2;
         text-align: left;
@@ -206,4 +206,31 @@ h3 {
     .nosotros__imagen {
         grid-column: 2/3;
     }
+}
+
+/* Íconos */
+
+.iconos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .iconos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.iconos__bloque {
+    text-align: center;
+}
+
+.iconos__imagen {
+    width: 100%;
+}
+
+.iconos__bloque h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
