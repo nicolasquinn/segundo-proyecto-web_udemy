@@ -121,7 +121,7 @@ h3 {
     }
 }
 
-/* Producto */
+/* Lista de producto */
 
 .producto {
     background-color: var(--primarioOscuro);
@@ -234,3 +234,5 @@ h3 {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 }
+
+/* Compra / Producto individual */
