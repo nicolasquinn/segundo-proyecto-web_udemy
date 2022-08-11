@@ -4,7 +4,7 @@
     --primario: #9C27B0;
     --primarioOscuro: #89119D;
     --secundario: #FFCE00;
-    --secundarioOscuro: rgb(233,287,2);
+    --secundarioOscuro: #d4aa00;
     --blanco: #FFF;
     --negro: #000;
     --fuentePrincipal: 'StaatLiches', cursive;
@@ -236,3 +236,50 @@ h3 {
 }
 
 /* Compra / Producto individual */
+
+.compra__imagen {
+    width: 100%;
+}
+
+.compra__formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.compra__campo {
+    background-color: transparent;
+    border: 1rem solid var(--primarioOscuro);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.compra__campo option {
+    color: #000;
+}
+
+.compra__enviar {
+    grid-column: 1/3;
+    font-size: 2.5rem;
+    background-color: var(--secundario);
+    padding: 2rem;
+    font-family: var(--fuentePrincipal);
+    border: none;
+    transition: background-color .3s ease;
+}
+
+.compra__enviar:hover {
+    background-color: var(--secundarioOscuro);
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .compra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
